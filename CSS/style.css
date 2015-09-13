@@ -5,6 +5,8 @@
     top:0;
     z-index: 100;
     pointer-events: none;
+    display: none;
+    opacity: .75;
 }
 
 body {
@@ -12,12 +14,37 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-#whats_online {
-    text-align: left;
-    background-color: #6D816D;
-    line-height: 150%;
+.block {
+    padding: 5px 5px 5px 5px;
 }
 
-.indented {
-    padding-left: 1em;
+.heading {
+    background-color: #678572;
+    margin-bottom: .3%;
+}
+
+.content {
+    background-color: #6D816D;
+}
+
+.section {
+    font-size: small;
+}
+
+.subsection {
+    font-size: smaller;
+    margin-left: 1em;
+}
+
+#whats_online {
+    margin-left: 8px;
+}
+
+.whats_online {
+    text-align: left;
+    padding-left: .5em;
+}
+
+.whats_online.content {
+    line-height: 150%;
 }

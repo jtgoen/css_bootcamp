@@ -5,52 +5,94 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <script type="text/javascript">
-        function toggle_background(id) {
+        function toggle_overlay(id) {
             var elem = document.getElementById(id);
-            if (elem.style.backgroundImage != "none") {
-                elem.style.backgroundImage = "none";
+            console.log(elem.style.display);
+            if (elem.style.display != "block") {
+                elem.style.display = "block";
             }
             else {
-                elem.style.backgroundImage = "url('IMAGES/reference.png')";
+                elem.style.display = "none";
             }
         }
     </script>
 </head>
 <img src="IMAGES/reference.png" id="overlay">
 <body id="body" style="background: #809a80 none;">
-    <!--<img src="IMAGES/ho_green_mast1.gif">
-    <div id="whats_online">
-        What's Online <br>
-        The Collection <br>
-        <div class="indented">
-            Explore and Learn <br>
-            Timeline of Art History <br>
+    <img src="IMAGES/ho_green_mast1.gif">
+
+    <div id="whats_online" class="block">
+        <div class="whats_online heading">
+            What's Online
         </div>
-        The Met Store <br>
-        Membership <br>
-        <div class="indented">
-            Support the Met <br>
-        </div>
-        Visitor Information <br>
-        <div class="indented">
-            Calendar <br>
-            The Cloisters & Lectures <br>
-            Concerts & Lectures <br>
-            Educational Resources <br>
-            Events & Programs <br>
-            FAQs <br>
-            Special Exhibitions <br>
-        </div>
-        My Met Museum <br>
-        News from the Met <br>
-        Site Index <br>
-        <br>
-        <div style="line-height: 100%">
-            Search <br>
+        <div class="whats_online content">
+            <span class="section">
+                The Collection <br>
+                <div class="subsection">
+                    Explore and Learn <br>
+                    Timeline of Art History <br>
+                </div>
+                The Met Store <br>
+                Membership <br>
+                <div class="subsection">
+                    Support the Met <br>
+                </div>
+                Visitor Information <br>
+                <div class="subsection">
+                    Calendar <br>
+                    The Cloisters & Lectures <br>
+                    Concerts & Lectures <br>
+                    Educational Resources <br>
+                    Events & Programs <br>
+                    FAQs <br>
+                    Special Exhibitions <br>
+                </div>
+                My Met Museum <br>
+                News from the Met <br>
+                Site Index <br>
+                <br>
+                <span style="line-height: 100%">
+                    Search <br>
+                </span>
+            </span>
         </div>
     </div>
-    <div id="special_exhibitions"></div>
-    <div id="selected_highlights"></div>-->
+
+
+    <div id="special_exhibitions" class="block">
+        <div class="special_exhibitions heading">
+            Special Exhibitions
+        </div>
+        <div class="special_exhibitions content">
+            <div id="ex1" class="exhibition">
+                <img src="IMAGES/chuck_big.jpg">
+                <br>
+                <span class="title">
+                    Chuck Close Prints: Process <br>
+                    and Collaboration
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="selected_highlights" class="block">
+        <div class="selected_highlights heading">
+            Selected Highlights
+        </div>
+        <div class="selected_highlights content">
+            <img src="IMAGES/ho_green_nam_jan04.gif">
+            <span class="title">
+                Now at the Met<br>
+            </span>
+            <br>
+            <span class="description">
+                A guide to<br>
+                what's new in <br>
+                the galleries and <br>
+                online
+            </span>
+        </div>
+    </div>
     <a href="#" onclick="toggle_overlay('overlay')">Click to toggle reference image</a>
 </body>
 </html>
