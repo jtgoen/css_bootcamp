@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/general.css">
+    <link rel="stylesheet" type="text/css" href="CSS/top-level.css">
+    <link rel="stylesheet" type="text/css" href="CSS/block-level.css">
+    <link rel="stylesheet" type="text/css" href="CSS/whats-online.css">
+    <link rel="stylesheet" type="text/css" href="CSS/special-exhibitions.css">
+    <link rel="stylesheet" type="text/css" href="CSS/selected-highlights.css">
     <script type="text/javascript">
         function toggle_overlay(id) {
             var elem = document.getElementById(id);
@@ -19,9 +24,11 @@
 </head>
 <img src="IMAGES/reference.png" id="overlay">
 <body id="body" style="background: #809a80 none;">
-    <img src="IMAGES/ho_green_mast1.gif" id="banner">
+    <img src="IMAGES/ho_green_mast1.gif" class="banner">
 
-    <div id="content">
+    <div id="padding" style="margin-bottom: 75px"></div>
+
+    <div class="content">
         <div id="left_blocks">
             <div id="whats_online" class="block">
                 <div class="whats_online block_heading">
@@ -72,10 +79,37 @@
                     <div id="ex1" class="exhibition">
                         <img src="IMAGES/chuck_big.jpg">
                         <br>
-                <span class="title">
-                    Chuck Close Prints: Process <br>
-                    and Collaboration
-                </span>
+                        <span class="title">
+                            Chuck Close Prints: Process <br>
+                            and Collaboration
+                        </span>
+                        <span class="description">
+                            Through April 18, 2004
+                        </span>
+                    </div>
+                    <div id="ex2" class="exhibition">
+                        <img src="IMAGES/tla_big.jpg">
+                        <br>
+                        <span class="title">
+                            Treasures of a Lost Art: Italian <br>
+                            Manuscript Painting of the <br>
+                            Middle Ages and Renaissance <br>
+                        </span>
+                        <span class="description">
+                            Through March 21, 2004
+                        </span>
+                    </div>
+                    <div id="ex3" class="exhibition">
+                        <img src="IMAGES/gifford.jpg">
+                        <br>
+                        <span class="title">
+                            Hudson River School Visions <br>
+                            THe Landscapes of Sandford R. <br>
+                            Gifford <br>
+                        </span>
+                        <span class="description">
+                            Through February 8, 2004
+                        </span>
                     </div>
                 </div>
             </div>
@@ -85,17 +119,21 @@
                     Selected Highlights
                 </div>
                 <div class="selected_highlights block_content">
-                    <img src="IMAGES/ho_green_nam_jan04.gif">
-            <span class="title">
-                Now at the Met<br>
-            </span>
-                    <br>
-            <span class="description">
-                A guide to<br>
-                what's new in <br>
-                the galleries and <br>
-                online
-            </span>
+                    <div class="highlight">
+                        <img src="IMAGES/ho_green_nam_jan04.gif">
+                        <div class="hi_text">
+                            <span class="title">
+                            Now at the Met<br>
+                            </span>
+                                <br>
+                            <span class="description">
+                                A guide to<br>
+                                what's new in <br>
+                                the galleries and <br>
+                                online
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
