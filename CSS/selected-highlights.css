@@ -1,7 +1,14 @@
 .highlight {
-    float: left;
+    display: inline-block;
+    vertical-align: top;
+}
+.hi_text {
+    padding-top: 5px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: smaller;
 }
 
-.hi_text {
-    float: left;
+.selected_highlights {
+    height: auto;
 }
