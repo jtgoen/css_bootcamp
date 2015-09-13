@@ -19,13 +19,15 @@
 </head>
 <img src="IMAGES/reference.png" id="overlay">
 <body id="body" style="background: #809a80 none;">
-    <img src="IMAGES/ho_green_mast1.gif">
+    <img src="IMAGES/ho_green_mast1.gif" id="banner">
 
-    <div id="whats_online" class="block">
-        <div class="whats_online heading">
-            What's Online
-        </div>
-        <div class="whats_online content">
+    <div id="content">
+        <div id="left_blocks">
+            <div id="whats_online" class="block">
+                <div class="whats_online block_heading">
+                    What's Online
+                </div>
+                <div class="whats_online block_content">
             <span class="section">
                 The Collection <br>
                 <div class="subsection">
@@ -40,7 +42,7 @@
                 Visitor Information <br>
                 <div class="subsection">
                     Calendar <br>
-                    The Cloisters & Lectures <br>
+                    The Cloisters <br>
                     Concerts & Lectures <br>
                     Educational Resources <br>
                     Events & Programs <br>
@@ -50,49 +52,53 @@
                 My Met Museum <br>
                 News from the Met <br>
                 Site Index <br>
-                <br>
-                <span style="line-height: 100%">
+                <span style="line-height: 75%">
                     Search <br>
+                    <input type="text" name="search" style="color: #000000; width: 90px; height: 20px">
+                    <img src="IMAGES/ho_green_go.gif">
                 </span>
             </span>
+                </div>
+            </div>
         </div>
-    </div>
 
-
-    <div id="special_exhibitions" class="block">
-        <div class="special_exhibitions heading">
-            Special Exhibitions
-        </div>
-        <div class="special_exhibitions content">
-            <div id="ex1" class="exhibition">
-                <img src="IMAGES/chuck_big.jpg">
-                <br>
+        <div id="right_blocks">
+            <div id="special_exhibitions" class="block">
+                <div class="special_exhibitions block_heading">
+                    Special Exhibitions
+                </div>
+                <div class="special_exhibitions block_content">
+                    <div id="ex1" class="exhibition">
+                        <img src="IMAGES/chuck_big.jpg">
+                        <br>
                 <span class="title">
                     Chuck Close Prints: Process <br>
                     and Collaboration
                 </span>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
-    <div id="selected_highlights" class="block">
-        <div class="selected_highlights heading">
-            Selected Highlights
-        </div>
-        <div class="selected_highlights content">
-            <img src="IMAGES/ho_green_nam_jan04.gif">
+            <div id="selected_highlights" class="block">
+                <div class="selected_highlights block_heading">
+                    Selected Highlights
+                </div>
+                <div class="selected_highlights block_content">
+                    <img src="IMAGES/ho_green_nam_jan04.gif">
             <span class="title">
                 Now at the Met<br>
             </span>
-            <br>
+                    <br>
             <span class="description">
                 A guide to<br>
                 what's new in <br>
                 the galleries and <br>
                 online
             </span>
+                </div>
+            </div>
         </div>
     </div>
-    <a href="#" onclick="toggle_overlay('overlay')">Click to toggle reference image</a>
+    <a href="#" onclick="toggle_overlay('overlay')" style="float: bottom">Click to toggle reference image</a>
 </body>
 </html>
