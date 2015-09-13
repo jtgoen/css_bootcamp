@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script type="text/javascript">
+        function toggle_background(id) {
+            var elem = document.getElementById(id);
+            if (elem.style.backgroundImage != "none") {
+                elem.style.backgroundImage = "none";
+            }
+            else {
+                elem.style.backgroundImage = "url('IMAGES/reference.png')";
+            }
+        }
+    </script>
+</head>
+<img src="IMAGES/reference.png" id="overlay">
+<body id="body" style="background: #809a80 none;">
+    <!--<img src="IMAGES/ho_green_mast1.gif">
+    <div id="whats_online">
+        What's Online <br>
+        The Collection <br>
+        <div class="indented">
+            Explore and Learn <br>
+            Timeline of Art History <br>
+        </div>
+        The Met Store <br>
+        Membership <br>
+        <div class="indented">
+            Support the Met <br>
+        </div>
+        Visitor Information <br>
+        <div class="indented">
+            Calendar <br>
+            The Cloisters & Lectures <br>
+            Concerts & Lectures <br>
+            Educational Resources <br>
+            Events & Programs <br>
+            FAQs <br>
+            Special Exhibitions <br>
+        </div>
+        My Met Museum <br>
+        News from the Met <br>
+        Site Index <br>
+        <br>
+        <div style="line-height: 100%">
+            Search <br>
+        </div>
+    </div>
+    <div id="special_exhibitions"></div>
+    <div id="selected_highlights"></div>-->
+    <a href="#" onclick="toggle_overlay('overlay')">Click to toggle reference image</a>
+</body>
+</html>

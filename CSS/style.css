@@ -1,0 +1,23 @@
+#overlay {
+    width: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 100;
+    pointer-events: none;
+}
+
+body {
+    color: #FFFFFF;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#whats_online {
+    text-align: left;
+    background-color: #6D816D;
+    line-height: 150%;
+}
+
+.indented {
+    padding-left: 1em;
+}
